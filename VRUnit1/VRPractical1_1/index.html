@@ -4,27 +4,205 @@
   </head>
   <body>
     <a-scene>
-      <a-plane src="grass.jpeg" repeat="20 20" position="0 0 -4" rotation="-90 0 0" width="100" height="100"></a-plane>
+      <a-plane src="grass.jpeg" repeat="20 20" position="0 0 -4" rotation="-90 0 0" width="200" height="200"></a-plane>
       <a-sky src="sky.jpg"></a-sky>
       
-      <a-cylinder src="tire.png" position="0 0.8 -3" radius="0.75" rotation="90 0 0"></a-cylinder>
-      <a-cylinder src="tire.png" position="4 0.8 -3" radius="0.75" rotation="90 0 0"></a-cylinder>
-      <a-cylinder src="tire.png" position="0 0.8 0" radius="0.75" rotation="90 0 0"></a-cylinder>
-      <a-cylinder src="tire.png" position="4 0.8 0" radius="0.75" rotation="90 0 0"></a-cylinder>
+     <a-box wireframe="true" position="1.65 2.15 -1.5" rotation="0 25 0" width="9.3" height="4.5" depth="5">
+      <a-cylinder src="tire.png" position="-1.65 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="-1.65 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
 
-      <a-box position="2 2 -1.5" depth="5" width="8.5" height="2" color="blue"></a-box>
-      <a-cylinder position="2 3 -1.5" rotation="0 0 90" radius="2" width="4" height="4" color="blue"></a-cylinder>
-      <a-box position="-1.75 3.5 -1.5" depth="5" height="1" color="black"></a-box>
+      <a-box position="0.35 -0.15 0" depth="5" width="8.5" height="2" color="blue"></a-box>
+      <a-cylinder position="0.35 0.85 0" rotation="0 0 90" radius="2" width="4" height="4" color="blue"></a-cylinder>
+      <a-box position="-3.65 1.35 0" depth="5" width="0.5" height="1" color="black"></a-box>
       
-      <a-plane position="4.1 3 -1.5" rotation="0 90 0" width="3" height="2.5" color="white"></a-plane>
-      <a-plane position="2 3 0.6" rotation="-14 0 0" width="3" height="2.5" color="white"></a-plane>
-      <a-plane position="2 3 -3.6" rotation="-14 180 0" width="3" height="2.5" color="white"></a-plane>
+      <a-plane src="windshield.png" transparent="0 0" material="side:double" position="2.45 1.45 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 2.1" rotation="14 180 0" width="3" height="2.5" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 -2.1" rotation="-14 180 0" width="3" height="2.5" color="white"></a-plane>
 
-      <a-circle src="lights.webp" position="6.3 2 0" rotation="0 90 0" radius="0.35"></a-circle>
-      <a-circle src="lights.webp" position="6.3 2 -3" rotation="0 90 0" radius="0.35"></a-circle>
+      <a-plane src="grill.png" transparent="0 0" material="side:double" position="4.65 -0.4 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-circle src="lights.webp" position="4.65 0.4 2" rotation="0 90 0" radius="0.35"></a-circle>
+      <a-circle src="lights.webp" position="4.65 0.4 -2" rotation="0 90 0" radius="0.35"></a-circle>
+     </a-box>
+
+     <a-box wireframe="true" position="5 2.15 -15" rotation="0 -25 0" width="9.3" height="4.5" depth="5">
+      <a-cylinder src="tire.png" position="-1.65 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="-1.65 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+
+      <a-box position="0.35 -0.15 0" depth="5" width="8.5" height="2" color="red"></a-box>
+      <a-cylinder position="0.35 0.85 0" rotation="0 0 90" radius="2" width="4" height="4" color="red"></a-cylinder>
+      <a-box position="-3.65 1.35 0" depth="5" width="0.5" height="1" color="black"></a-box>
+      
+      <a-plane src="windshield.png" transparent="0 0" material="side:double" position="2.45 1.45 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 2.1" rotation="14 180 0" width="3" height="2.5" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 -2.1" rotation="-14 180 0" width="3" height="2.5" color="white"></a-plane>
+
+      <a-plane src="grill.png" transparent="0 0" material="side:double" position="4.65 -0.4 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-circle src="lights.webp" position="4.65 0.4 2" rotation="0 90 0" radius="0.35"></a-circle>
+      <a-circle src="lights.webp" position="4.65 0.4 -2" rotation="0 90 0" radius="0.35"></a-circle>
+     </a-box>
+
+     <a-box wireframe="true" position="12 2.15 -25" width="9.3" height="4.5" depth="5">
+      <a-cylinder src="tire.png" position="-1.65 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="-1.65 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+
+      <a-box position="0.35 -0.15 0" depth="5" width="8.5" height="2" color="yellow"></a-box>
+      <a-cylinder position="0.35 0.85 0" rotation="0 0 90" radius="2" width="4" height="4" color="yellow"></a-cylinder>
+      <a-box position="-3.65 1.35 0" depth="5" width="0.5" height="1" color="black"></a-box>
+      
+      <a-plane src="windshield.png" transparent="0 0" material="side:double" position="2.45 1.45 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 2.1" rotation="14 180 0" width="3" height="2.5" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 -2.1" rotation="-14 180 0" width="3" height="2.5" color="white"></a-plane>
+
+      <a-plane src="grill.png" transparent="0 0" material="side:double" position="4.65 -0.4 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-circle src="lights.webp" position="4.65 0.4 2" rotation="0 90 0" radius="0.35"></a-circle>
+      <a-circle src="lights.webp" position="4.65 0.4 -2" rotation="0 90 0" radius="0.35"></a-circle>
+     </a-box>
+
+     <a-box wireframe="true" position="24 2.15 -50" rotation="0 -45 0" width="9.3" height="4.5" depth="5">
+      <a-cylinder src="tire.png" position="-1.65 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="-1.65 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+
+      <a-box position="0.35 -0.15 0" depth="5" width="8.5" height="2" color="green"></a-box>
+      <a-cylinder position="0.35 0.85 0" rotation="0 0 90" radius="2" width="4" height="4" color="green"></a-cylinder>
+      <a-box position="-3.65 1.35 0" depth="5" width="0.5" height="1" color="black"></a-box>
+      
+      <a-plane src="windshield.png" transparent="0 0" material="side:double" position="2.45 1.45 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 2.1" rotation="14 180 0" width="3" height="2.5" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 -2.1" rotation="-14 180 0" width="3" height="2.5" color="white"></a-plane>
+
+      <a-plane src="grill.png" transparent="0 0" material="side:double" position="4.65 -0.4 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-circle src="lights.webp" position="4.65 0.4 2" rotation="0 90 0" radius="0.35"></a-circle>
+      <a-circle src="lights.webp" position="4.65 0.4 -2" rotation="0 90 0" radius="0.35"></a-circle>
+     </a-box>
 
 
-      <a-camera position="0 3 5"></a-camera>
+     <a-box wireframe="true" position="35 2.15 -60" rotation="0 -25 0" width="9.3" height="4.5" depth="5">
+      <a-cylinder src="tire.png" position="-1.65 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="-1.65 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+
+      <a-box position="0.35 -0.15 0" depth="5" width="8.5" height="2" color="black"></a-box>
+      <a-cylinder position="0.35 0.85 0" rotation="0 0 90" radius="2" width="4" height="4" color="black"></a-cylinder>
+      <a-box position="-3.65 1.35 0" depth="5" width="0.5" height="1" color="black"></a-box>
+      
+      <a-plane src="windshield.png" transparent="0 0" material="side:double" position="2.45 1.45 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 2.1" rotation="14 180 0" width="3" height="2.5" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 -2.1" rotation="-14 180 0" width="3" height="2.5" color="white"></a-plane>
+
+      <a-plane src="grill.png" transparent="0 0" material="side:double" position="4.65 -0.4 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-circle src="lights.webp" position="4.65 0.4 2" rotation="0 90 0" radius="0.35"></a-circle>
+      <a-circle src="lights.webp" position="4.65 0.4 -2" rotation="0 90 0" radius="0.35"></a-circle>
+     </a-box>
+
+     <a-box wireframe="true" position="45 2.15 -70" rotation="0 45 0" width="9.3" height="4.5" depth="5">
+      <a-cylinder src="tire.png" position="-1.65 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 -1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="-1.65 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+      <a-cylinder src="tire.png" position="2.35 -1.35 1.5" radius="0.75" rotation="90 0 0"></a-cylinder>
+
+      <a-box position="0.35 -0.15 0" depth="5" width="8.5" height="2" color="white"></a-box>
+      <a-cylinder position="0.35 0.85 0" rotation="0 0 90" radius="2" width="4" height="4" color="white"></a-cylinder>
+      <a-box position="-3.65 1.35 0" depth="5" width="0.5" height="1" color="black"></a-box>
+      
+      <a-plane src="windshield.png" transparent="0 0" material="side:double" position="2.45 1.45 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 2.1" rotation="14 180 0" width="3" height="2.5" color="white"></a-plane>
+      <a-plane src="window.png" transparent="0 0" material="side:double" position="0.35 1.6 -2.1" rotation="-14 180 0" width="3" height="2.5" color="white"></a-plane>
+
+      <a-plane src="grill.png" transparent="0 0" material="side:double" position="4.65 -0.4 0" rotation="0 90 0" width="4" height="2" color="white"></a-plane>
+      <a-circle src="lights.webp" position="4.65 0.4 2" rotation="0 90 0" radius="0.35"></a-circle>
+      <a-circle src="lights.webp" position="4.65 0.4 -2" rotation="0 90 0" radius="0.35"></a-circle>
+     </a-box>
+    
+      <a-box position="50 0 -70" rotation="10 6 8">
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+
+      <a-box position="65 0 -20" rotation="10 6 8">
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+
+      <a-box position="34 0 -50" rotation="10 6 8">
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+
+      <a-box position="45 0 -2" rotation="10 6 8">
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+    
+      <a-box position="50 0 -10" rotation="10 6 8">
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+
+      <a-box position="20 0 -15" rotation="10 6 8">
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+      
+      <a-box position="20 0 -1.5" rotation="10 6 8">
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+
+      <a-box position="50 0 -60" rotation="10 6 8">
+        <a-cylinder position="0 0 0" height="3" radius=".75" color="brown"></a-cylinder>
+        <a-cone position="0 1.5 0" height="1.5" radius-bottom="2" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 2.5 0" height="1.5" radius-bottom="1.7" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 3.5 0" height="1.5" radius-bottom="1.4" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 4.5 0" height="1.5" radius-bottom="1.1" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 5.5 0" height="1.5" radius-bottom="0.9" radius-top="0.1" color="green"></a-cone>
+        <a-cone position="0 6.5 0" height="1.5" radius-bottom="0.7" radius-top="0.1" color="green"></a-cone>
+      </a-box>
+
+      <a-camera position="0 4 5"></a-camera>
     </a-scene>
   </body>
 </html>
