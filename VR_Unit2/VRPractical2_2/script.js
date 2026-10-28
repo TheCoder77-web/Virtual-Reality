@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded",function() {
     rocket = document.querySelector("#rocket");
 
     ball.x = 0;
-    ball.dx= 0.1;
+    ball.dx= 0.5;
 
     rocket.x = 0;
     rocket.dx= 0.1;
@@ -18,7 +18,6 @@ window.addEventListener("DOMContentLoaded",function() {
 function loop(){
     ball.x += ball.dx;
     ball.setAttribute("rotation",{x:0, y:ball.x, z:0});
-    window.requestAnimationFrame(loop);
 
     rocket.x += rocket.dx;
     rocket.setAttribute("position",{x:0, y:rocket.x, z:-4});
