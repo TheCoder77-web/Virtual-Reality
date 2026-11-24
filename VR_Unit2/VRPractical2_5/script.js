@@ -11,18 +11,18 @@
 */
 
 let maze = [
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
-  "----------------------",
+  "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "x---t----x-----o----t-----x",
+  "x-xxxxx--x--xxxxx--xxxx-o-x",
+  "x-x---o-----x---t-----x---x",
+  "x-x-xxxxxxx-x-xxxxxxx-xxx-x",
+  "x---t-----x-o-------x-----x",
+  "xxxxxxx-x-xxxxxxxxx-xxxxx-x",
+  "x-----o-x-----t-----x---t-x",
+  "x-xxx-xxxxxxx-xxxxxxx-x-xxx",
+  "---x--------x-o-------x----",
+  "x--x--o--t--x---t--o--x---x",
+  "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
 ];
 
 /* Challenge 2
@@ -34,6 +34,18 @@ let scene;
 window.addEventListener("DOMContentLoaded",function() {
   scene = document.querySelector("a-scene");
   for(let r = 0; r < maze.length; r++){
+    let row = maze[r];
+    let cols = row.split("");
+    for(let c = 0; c < cols.length; c++){
+      if(cols[c] == "x"){
+        new Block(c,1,r);
+      }else if(cols[c] == "o"){
+        new Rock(c,1,r);
+      }else if(cols[c] == "t"){
+        new Tree(c,1,r);
+      }
+    }
+
     /* Challenge 3
       Choose a technique to traverse the each character in the string.
     */ 
