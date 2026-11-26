@@ -12,16 +12,16 @@
 
 let maze = [
   "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
-  "x---t----x-----o----t-----x",
-  "x-xxxxx--x--xxxxx--xxxx-o-x",
-  "x-x---o-----x---t-----x---x",
-  "x-x-xxxxxxx-x-xxxxxxx-xxx-x",
-  "x---t-----x-o-------x-----x",
-  "xxxxxxx-x-xxxxxxxxx-xxxxx-x",
-  "x-----o-x-----t-----x---t-x",
-  "x-xxx-xxxxxxx-xxxxxxx-x-xxx",
-  "---x--------x-o-------x----",
-  "x--x--o--t--x---t--o--x---x",
+  "x--o----x-----t----x--o---x",
+  "x-xxxxx-x-xxxxxxx--x-xxxx-x",
+  "x-x---t---x-----o----x----x",
+  "x-x-xxxxxxx-xxx-xxxxxx-xx-x",
+  "x---o-------x--------x--t-x",
+  "xxxxxxx-xxxxx-xxxxxx-xxxx-x",
+  "x-------x---o------x----o-x",
+  "x-xxx-xxx-xxxxxxxx-xxxxxx-x",
+  "--x-----x---t----x--------x",
+  "x-x-xxx-xxx-xxxx-x-xxxxxx--",
   "xxxxxxxxxxxxxxxxxxxxxxxxxxx",
 ];
 
@@ -38,11 +38,11 @@ window.addEventListener("DOMContentLoaded",function() {
     let cols = row.split("");
     for(let c = 0; c < cols.length; c++){
       if(cols[c] == "x"){
-        new Block(c,1,r);
+        new Wall(c,1,r);
       }else if(cols[c] == "o"){
-        new Rock(c,1,r);
+        new Ball(c,1,r);
       }else if(cols[c] == "t"){
-        new Tree(c,1,r);
+        new Orb(c,1,r);
       }
     }
 
